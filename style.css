@@ -1,27 +1,28 @@
+
 /*  Variables */
 :root {
     /* Main Colors */
-    --primary-color: #f3b312;
+    --primary-color: #30f312;
     --secondary-color: #cfa109;
 
     /* Background Colors */
-    --background-primary: #121212;
+    --background-primary: #15bc1b;
     --background-secondary: rgb(240, 157, 14);
 
     /* Projects Background Color */
     --card-bg: #eebdbd;
 
     /* Regualr Text Color */
-    --text-color: #f0f41c;
+    --text-color: #1b1b17;
 
     /* Nav Bar Color */
     --navbar-bg: rgba(186, 77, 77, 0.5);
 
 
     /* Cursor Colors */
-    --glow-color1: rgba(136, 89, 12, 0.1);
+    --glow-color1: rgba(223, 238, 8, 0.1);
     --glow-color2: rgba(39, 156, 18, 0.568);
-    --glow-color3: rgba(14, 12, 3, 0.025);
+    --glow-color3: rgba(247, 203, 10, 0.912);
 
 }
 #particleCanvas {
@@ -32,7 +33,7 @@
     height: 100vh;
     z-index: -1; /* Pushes it behind everything */
     pointer-events: none; /* Ensures interactions pass through */
-    background-color: #2f2b2b;
+    background-color: #0bf1e5;
 }
 /* Global Styles */
 * {
@@ -354,6 +355,9 @@ button:hover {
 
     #about img {
         margin-top: 20px;
+        
+        
+        
     }
 
     .skills-grid {
@@ -365,4 +369,20 @@ button:hover {
         flex-direction: column;
         align-items: center;
     }
+}
+.social-links {
+    display: flex;
+    justify-content: center; /* Center the icons */
+    gap: 15px; /* Space between icons */
+    margin-top: 30px;
+}
+
+.social-links img {
+    width: 40px; /* Adjust size */
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.social-links img:hover {
+    transform: scale(1.2); /* Hover effect */
 }
